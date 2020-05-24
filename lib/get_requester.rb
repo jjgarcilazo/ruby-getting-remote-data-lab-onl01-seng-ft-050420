@@ -5,7 +5,7 @@ require 'pry'
 
 class GetRequester
    def initialize(url)
-  @url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
+  @url = 'https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json'
    end
 
    def get_response_body
@@ -15,7 +15,6 @@ class GetRequester
    end
 
    def parse_json
-# we use the JSON library to parse the API response into nicely formatted JSON
   programs = JSON.parse(self.get_response_body)
   programs.collect do |program|
     program["json-site-example"]
