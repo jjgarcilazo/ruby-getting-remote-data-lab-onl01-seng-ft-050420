@@ -19,6 +19,6 @@ class GetRequester
   programs.collect do |program|
     program["agency"]
   end
-end 
+end
 programs = GetPrograms.new.get_programs
 puts programs
