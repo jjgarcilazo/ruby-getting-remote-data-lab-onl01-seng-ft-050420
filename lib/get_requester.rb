@@ -20,6 +20,6 @@ class GetRequester
     program["json-site-example"]
    end
  end
-
+end
 programs = GetRequester.new
 puts programs.parse_json.uniq
