@@ -21,5 +21,5 @@ class GetRequester
    end
  end
 end
-programs = GetRequester.new
-puts programs.parse_json.uniq
+#programs = GetRequester.new
+#puts programs.parse_json.uniq
