@@ -17,6 +17,6 @@ class GetRequester
 # we use the JSON library to parse the API response into nicely formatted JSON
   programs = JSON.parse(self.get_programs)
   programs.collect do |program|
-    program["agency"]  
+    program["agency"]
   end
 end
