@@ -16,9 +16,6 @@ class GetRequester
 
    def parse_json
   programs = JSON.parse(self.get_response_body)
-  programs.collect do |program|
-    program["json-site-example"]
-   end
  end
 end
 #programs = GetRequester.new
