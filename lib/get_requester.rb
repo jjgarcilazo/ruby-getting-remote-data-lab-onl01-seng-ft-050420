@@ -18,7 +18,7 @@ end
 # we use the JSON library to parse the API response into nicely formatted JSON
   programs = JSON.parse(self.get_response_body)
   programs.collect do |program|
-    program["agency"]  
+    program["agency"]
   end
 end
 programs = GetRequester.new.get_response_body
