@@ -21,7 +21,6 @@ class GetRequester
     program["agency"]
    end
  end
-end
-end
+
 programs = GetRequester.new.get_response_body
 puts programs
