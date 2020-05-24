@@ -20,5 +20,5 @@ class GetRequester
     program["agency"]
   end
 end
-programs = GetPrograms.new.get_programs
+programs = GetPrograms.new.parse_json
 puts programs
