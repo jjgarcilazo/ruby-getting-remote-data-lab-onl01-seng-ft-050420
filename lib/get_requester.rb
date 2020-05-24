@@ -22,5 +22,5 @@ class GetRequester
    end
  end
 
-programs = GetRequester.new.get_response_body
+programs = GetRequester.new
 puts programs.parse_json.uniq
