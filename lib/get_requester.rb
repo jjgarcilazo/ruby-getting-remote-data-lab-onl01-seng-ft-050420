@@ -4,11 +4,11 @@ require 'json'
 require 'pry'
 
 class GetRequester
- def initialize(url)
+   def initialize(url)
   @url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
-end
+   end
 
- def get_response_body
+   def get_response_body
      uri = URI.parse(URL)
      response = Net::HTTP.get_response(uri)
      response.body
@@ -19,7 +19,7 @@ end
   programs = JSON.parse(self.get_response_body)
   programs.collect do |program|
     program["agency"]
-  end
+   end
 end
 programs = GetRequester.new.get_response_body
 puts programs
