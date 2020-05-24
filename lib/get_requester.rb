@@ -20,6 +20,7 @@ class GetRequester
   programs.collect do |program|
     program["agency"]
    end
+ end
 end
 programs = GetRequester.new.get_response_body
 puts programs
